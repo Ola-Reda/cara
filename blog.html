@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cara</title>
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="css/output.css">
+    </head>
+    <body class="font-League">
+        <!--navbar-->
+        <nav class="bg-slate-200 shadow-2xl py-3 sticky top-0 z-10 px-5">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="navs shadow-lg fixed top-0 right-0 pt-4 pl-5 w-[170px] h-screen translate-x-full sm:translate-x-0 sm:relative sm:shadow-none sm:pt-0 sm:pl-0 sm:w-auto sm:h-auto bg-slate-200 sm:bg-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 cursor-pointer close hover:text-dim-900 sm:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>                      
+                    <ul class="flex flex-col flex-start leading-10 pt-5 sm:pt-0 sm:flex-row sm:items-center sm:space-x-8">
+                        <li>
+                            <a href="index.html" class="after-content text-dim-900 font-semibold relative transition ease-in-out delay-150">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>                              
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer open hover:text-dim-900">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!--navbar-->
+        <!--section home-->
+        <section class="home-blog flex items-center justify-center px-5 text-center">
+            <div class="container">
+                <div class="text leading-10 text-white">
+                    <h1 class="font-semibold text-4xl sm:text-6xl">#readmore</h1>
+                    <p>read all case studies about our products!</p>
+                </div>
+            </div>
+        </section>
+        <!--section home-->
+        <!--section blogs-->
+        <section class="blogs px-5 pt-16">
+            <div class="container m-auto blogs-box">
+                <div class="flex flex-col items-center gap-10 mb-16 min-[500px]:flex-row">
+                    <div class="min-[500px]:w-6/12">
+                        <img src="images/blog/b1.jpg" alt="" class="w-full min-[500px]:h-[270px] object-cover">
+                    </div>
+                    <div class="min-[500px]:w-[40%]">
+                        <h3 class="font-semibold text-2xl capitalize mb-1.5"></h3>
+                        <p class="text-[#979595] mb-2 leading-5 text-lg"></p>
+                        <a href="#" class="relative line uppercase font-semibold text-sm"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section blogs-->
+        <!--news-letter-->
+        <section class="news-letter flex items-center bg-[#041e42] px-5 py-10">
+            <div class="container m-auto grid md:grid-cols-2 gap-5 items-center justify-between">
+                <div>
+                    <h2 class="text-white text-4xl font-medium mb-2 capitalize">Sign Up For Newsletters</h2>
+                    <p class="text-[#818ea0] font-semibold">Get E-mail updataes about our latest shop and <span class="text-amber-400">special offers.</span></p>
+                </div>
+                <div>
+                    <form>
+                        <input type="text" placeholder="Your email address" class="outline-none py-[9px] px-2.5 rounded-l-sm sm:w-[270px]">
+                        <button class="bg-dim-900 text-white capitalize -ml-1 py-[9px] px-5 rounded-r-sm">sign up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--news-letter-->
+        <!--footer-->
+        <footer class="pt-12 pb-14 px-5">
+            <div class="container m-auto grid min-[500px]:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_200px_200px_1fr] gap-4 capitalize">
+                <div class="text-[#404442] leading-[28px]">
+                    <img src="images/logo.png" alt="logo">
+                    <h4 class="font-semibold mt-5 mb-2.5 text-black">contact</h4>
+                    <p><span class="font-medium">address: </span> 562 wellingtan road. street32.</p>
+                    <p><span class="font-medium">phone: </span> +012222 365/(+91)0123456789</p>
+                    <p><span class="font-medium">hours: </span>10:00- 18:00. mon - sat</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2.5">about</h4>
+                    <ul class="leading-[30px]">
+                        <li>
+                            <a href="#" class="link">about us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">sign in</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">terms & conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h4 class="font-semibold mb-2.5">my account</h4>
+                    <ul class="text-[#404442] leading-[30px]">
+                        <li>
+                            <a href="#" class="link">sign in</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">view cart</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">my wishlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">track my order</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2.5">install app</h4>
+                    <p class="text-[#404442] mb-2">from app store or google play</p>
+                    <div class="flex flex-col md:flex-row">
+                        <img src="images/pay/app.jpg" alt='app' class="border border-dim-900 rounded-md mr-1 mb-4">
+                        <img src="images/pay/play.jpg" alt="pay" class="border border-dim-900 rounded-md mb-4">
+                    </div>
+                    <p class="text-[#404442] mb-2">secured payment gateways</p>
+                    <img src="images/pay/pay.png" alt="image">
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+        <script src="js/data.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/blog.js"></script>
+    </body>
+</html>

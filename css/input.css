@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .after-content {
+        @apply after:content-[''] after:bg-dim-900 after:absolute after:left-0 after:-bottom-1 after:w-1/2	 after:h-0.5;
+    }
+
+    .link {
+        @apply text-[#404442] hover:text-dim-900
+    }
+
+    .line {
+        @apply after:content-[''] after:bg-black after:absolute after:w-16	after:h-0.5 after:ml-2 after:mt-2.5 hover:after:ml-3 after:transition after:delay-200 after:ease-in-out after:duration-500;
+    }
+}
+
+@layer utilities {
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #fff;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border: 2px solid #fff;
+    }
+
+    main {
+        background-image: url(../images/hero4.png);
+        background-position: top 25% right 0;
+        background-size: cover;
+        height: calc(100vh - 64px);
+    }
+
+    @media (max-width: 600px) {
+        main {
+            background-position: 80%;
+        }
+    }
+
+    main button {
+        background-image: url(../images/button.png);
+        background-position: center;
+        background-size: cover;
+        padding: 14px 80px 14px 65px;
+    }
+
+    .feature .content:nth-child(2) h4 {
+        background-color: #cdebbc;
+    }
+
+    .feature .content:nth-child(3) h4 {
+        background-color: #d1e8f2;
+    }
+
+    .feature .content:nth-child(4) h4 {
+        background-color: #cdd4f8;
+    }
+
+    .feature .content:nth-child(5) h4 {
+        background-color: #f6dbf6;
+    }
+
+    .feature .content:nth-child(6) h4 {
+        background-color: #fff2e5;
+    }
+
+    .sale {
+        background-image: url('../images/banners/b2.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+
+    .news-letter {
+        background-image: url('../images/banners/b14.png');
+        background-position: center;
+        background-position: 20% 30%;
+        background-repeat: no-repeat;
+    }
+
+
+    /***************shop page*****************/
+    .home-shop {
+        background-image: url(../images/banners/b1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+
+    /***************blog page*****************/
+    .home-blog {
+        background-image: url(../images/banners/b19.jpg);
+        background-size: cover;
+        height: 40vh;
+    }
+
+
+    /***************about page - contact page - cart page*****************/
+    .home-about, .home-contact, .home-cart {
+        background-image: url(../images/banner.png);
+        background-size: cover;
+        height: 40vh;
+    }
+}
