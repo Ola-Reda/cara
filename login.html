@@ -7,18 +7,37 @@
         <link rel="icon" href="images/icon.png">
         <link rel="stylesheet" href="css/output.css">
     </head>
-    <body class="bg-dim-900">
-        <section class="login bg-white rounded-sm">
-            <div class="container">
-                <div class="image">
-                    <img src="images/36483426.jpg" class="w-full" alt="">
-                </div>
-                <div class="login-form">
-                    <form>
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button>Login</button>
-                    </form>
+    <body class="bg-dim-900 h-screen flex items-center justify-center">
+        <section class="login bg-white rounded-lg w-3/4 m-auto">
+            <div class="container m-auto">
+                <div class="flex items-center">
+                    <div class="image w-2/4">
+                        <img src="images/36483426.jpg" class="w-full rounded-lg" alt="image">
+                    </div>
+                    <div class="login-form w-2/4 text-center">
+                        <h1 class="text-dim-900 font-bold text-5xl mb-10">Welcome to Cara</h1>
+                        <form class="flex items-center flex-col">
+                            <div class="flex items-center border rounded mb-8 px-2 py-1.5 shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2.5 text-dim-900">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                </svg>                              
+                                <input type="email" placeholder="Email" class="w-56 outline-none">
+                            </div>
+                            <div class="flex items-center border rounded mb-8 px-2 py-1.5 shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2.5 text-dim-900">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                </svg>
+                                <input type="password" placeholder="Password" class="w-56 outline-none">
+                            </div>
+                            <button class="bg-dim-900 text-white rounded py-1.5 px-7 flex">Login
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ms-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+                                </svg>                                                                   
+                            </button>
+                            <!-- <p class="capitalize position-relative bottom-0">don't have an account?<a href="register.html" class="text-dim-900 font-semibold"> sign up</a></p> -->
+                        </form>
+                        <p class="capitalize relative top-12">don't have an account?<a href="register.html" class="text-dim-900 font-semibold"> sign up</a></p>
+                    </div>
                 </div>
             </div>
         </section>
