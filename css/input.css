@@ -111,4 +111,15 @@
         background-size: cover;
         height: 40vh;
     }
+
+    /***********************/
+    .transtion {
+        transition: .4s ease-in;
+    }
+
+    /**************show alert****************/
+    .show {
+        transform: translateY(60px);
+        opacity: 1;
+    }
 }
