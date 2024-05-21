@@ -7,43 +7,43 @@
         <link rel="icon" href="images/icon.png">
         <link rel="stylesheet" href="css/output.css">
     </head>
-    <body class="bg-dim-900 h-screen flex items-center justify-center">
+    <body class="font-League bg-dim-900 h-screen flex items-center justify-center">
         <!--alert-->
         <div class="alert absolute top-0 bg-red-600 text-white rounded-2xl capitalize px-5 py-1.5 transtion opacity-0">please, enter the data</div>
-        <section class="login bg-white rounded-lg w-3/4 m-auto">
+        <section class="bg-white rounded-lg w-3/4 m-auto px-5 py-2">
             <div class="container m-auto">
-                <div class="flex items-center">
-                    <div class="image w-2/4">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="image w-full md:w-2/4">
                         <img src="images/36483426.jpg" class="w-full rounded-lg" alt="image">
                     </div>
-                    <div class="login-form w-2/4 text-center">
-                        <h1 class="text-dim-900 font-bold text-5xl mb-10">Welcome to Cara</h1>
+                    <div class="login-form w-full md:w-2/4 text-center">
+                        <h1 class="text-dim-900 font-bold text-2xl md:text-5xl mb-5 md:mb-10">Welcome to Cara</h1>
                         <form class="flex items-center flex-col">
-                            <div class="flex items-center border rounded mb-6 px-2 py-1.5 shadow hover:border-dim-900 transtion">
+                            <div class="flex items-center border rounded mb-5 md:mb-8 px-2 py-1.5 shadow hover:border-dim-900 transtion">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2.5 text-dim-900">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                                 </svg>                                                               
-                                <input type="text" placeholder="Username" class="Username w-56 outline-none">
+                                <input type="text" placeholder="Username" class="Username md:w-56 outline-none">
                             </div>
-                            <div class="flex items-center border rounded mb-6 px-2 py-1.5 shadow hover:border-dim-900 transtion">
+                            <div class="flex items-center border rounded mb-5 md:mb-8 px-2 py-1.5 shadow hover:border-dim-900 transtion">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2.5 text-dim-900">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                 </svg>                              
-                                <input type="email" placeholder="Email" class="email w-56 outline-none">
+                                <input type="email" placeholder="Email" class="email md:w-56 outline-none">
                             </div>
-                            <div class="flex items-center border rounded mb-6 px-2 py-1.5 shadow hover:border-dim-900 transtion">
+                            <div class="flex items-center border rounded mb-5 md:mb-8 px-2 py-1.5 shadow hover:border-dim-900 transtion">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2.5 text-dim-900">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
                                 </svg>
-                                <input type="password" placeholder="Password" class="password w-56 outline-none">
+                                <input type="password" placeholder="Password" class="password md:w-56 outline-none">
                             </div>
-                            <button class="bg-dim-900 text-white rounded py-1.5 px-7 flex hover:bg-transparent hover:border hover:text-dim-900 hover:border-dim-900 transtion">Sign Up
+                            <button class="bg-dim-900 text-white rounded mb-2 md:mb-0 py-1.5 px-7 flex hover:bg-transparent hover:border hover:text-dim-900 hover:border-dim-900 transtion">Sign Up
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ms-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
                                 </svg>                                                                   
                             </button>
                         </form>
-                        <p class="capitalize relative top-8">already have an account?<a href="login.html" class="text-dim-900 font-semibold hover:text-dim-500 transtion"> sign in</a></p>
+                        <p class="capitalize relative md:top-8">already have an account?<a href="login.html" class="text-dim-900 font-semibold hover:text-dim-500 transtion"> sign in</a></p>
                     </div>
                 </div>
             </div>

@@ -779,6 +779,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1446,11 +1450,6 @@ main button {
 
 /**************show alert****************/
 
-.show {
-  transform: translateY(60px);
-  opacity: 1;
-}
-
 .hover\:scale-95:hover{
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -1601,6 +1600,38 @@ main button {
 }
 
 @media (min-width: 768px){
+  .md\:top-12{
+    top: 3rem;
+  }
+
+  .md\:top-8{
+    top: 2rem;
+  }
+
+  .md\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:w-2\/4{
+    width: 50%;
+  }
+
+  .md\:w-56{
+    width: 14rem;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1611,6 +1642,11 @@ main button {
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
