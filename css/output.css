@@ -667,6 +667,10 @@ video {
   margin: auto;
 }
 
+.m-3{
+  margin: 0.75rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -687,6 +691,11 @@ video {
   margin-bottom: 3rem;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .-ml-1{
   margin-left: -0.25rem;
 }
@@ -697,6 +706,10 @@ video {
 
 .mb-1\.5{
   margin-bottom: 0.375rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-14{
@@ -767,10 +780,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -815,10 +824,6 @@ video {
   width: 75%;
 }
 
-.w-3\/6{
-  width: 50%;
-}
-
 .w-4{
   width: 1rem;
 }
@@ -837,18 +842,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-2{
-  width: 0.5rem;
-}
-
-.w-2\/6{
-  width: 33.333333%;
-}
-
-.w-2\/5{
-  width: 40%;
 }
 
 .min-w-\[500px\]{
@@ -874,10 +867,6 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -908,6 +897,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -918,10 +911,6 @@ video {
 
 .gap-3{
   gap: 0.75rem;
-}
-
-.gap-16{
-  gap: 4rem;
 }
 
 .rounded{
@@ -1093,6 +1082,10 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.pb-16{
+  padding-bottom: 4rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -1135,10 +1128,6 @@ video {
 
 .pt-7{
   padding-top: 1.75rem;
-}
-
-.pb-16{
-  padding-bottom: 4rem;
 }
 
 .text-center{
@@ -1234,6 +1223,10 @@ video {
 
 .leading-snug{
   line-height: 1.375;
+}
+
+.leading-4{
+  line-height: 1rem;
 }
 
 .text-\[\#404442\]{
@@ -1616,28 +1609,24 @@ main button {
     margin-bottom: 2rem;
   }
 
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:w-2\/4{
     width: 50%;
   }
 
-  .md\:w-56{
-    width: 14rem;
-  }
-
-  .md\:w-3\/6{
-    width: 50%;
+  .md\:w-2\/5{
+    width: 40%;
   }
 
   .md\:w-3\/5{
     width: 60%;
   }
 
-  .md\:w-2\/5{
-    width: 40%;
+  .md\:w-3\/6{
+    width: 50%;
+  }
+
+  .md\:w-56{
+    width: 14rem;
   }
 
   .md\:grid-cols-2{
@@ -1650,10 +1639,6 @@ main button {
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:flex-col{
-    flex-direction: column;
   }
 
   .md\:text-left{
