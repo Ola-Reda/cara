@@ -14,8 +14,8 @@ function dsiplayproducts(data) {
     let products = ''
     data.map(item => {
         products += `
-        <div class="p-3 product border border-solid border-gray-200 rounded-2xl shadow hover:scale-95 transition delay-200 ease-in-out duration-500" id="${item.id}">
-            <img class="rounded-2xl" src="${item.image}" alt="${item.name}">
+        <div class="p-3 product border border-solid border-gray-200 rounded-3xl shadow hover:scale-95 transition delay-200 ease-in-out duration-500" id="${item.id}">
+            <img class="rounded-3xl" src="${item.image}" alt="${item.name}">
             <div class="mt-4">
                 <span class="text-[#979595]">${item.brand}</span>
                 <h4 class="capitalize font-medium">${item.name}</h4>
@@ -44,8 +44,8 @@ function dsiplayArrival(data) {
     let products = ''
     data.map(item => {
         products += `
-        <div class="p-3 product border border-solid border-gray-200 rounded-2xl shadow hover:scale-95 transition delay-200 duration-500 ease-in-out" id="${item.id}">
-            <img class="rounded-2xl" src="${item.image}" alt="${item.name}">
+        <div class="p-3 product border border-solid border-gray-200 rounded-3xl shadow hover:scale-95 transition delay-200 duration-500 ease-in-out" id="${item.id}">
+            <img class="rounded-3xl" src="${item.image}" alt="${item.name}">
             <div class="mt-4">
                 <span class="text-[#979595]">${item.brand}</span>
                 <h4 class="capitalize font-medium">${item.name}</h4>
@@ -87,7 +87,7 @@ function displayTopBlog(data) {
     let banners = ''
     data.map(item => {
         banners += `
-            <div class="${item.id} flex items-center text-white min-w-[500px] h-[400px] hover:brightness-50 transition ease-in-out delay-150 duration-500">
+            <div class="${item.id} transtion flex items-center text-white h-60 md:h-[400px] hover:brightness-50">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full">
                 <div class="absolute pl-8 leading-10">
                     <span class="font-extralight text-[26px]">${item.name}</span>
@@ -107,7 +107,7 @@ function displayBottomBlog(data) {
     let banners = ''
     data.map(item => {
         banners += `
-            <div class="${item.id} flex items-center text-white hover:brightness-50 transition ease-in-out delay-150 duration-500">
+            <div class="${item.id} transtion flex items-center text-white hover:brightness-50">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full">
                 <div class="absolute pl-8 leading-8">
                     <span class="font-bold uppercase text-[26px]">${item.name}</span>
