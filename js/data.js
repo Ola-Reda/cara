@@ -264,7 +264,6 @@ const blogsData = [
     }
 ]
 
-
-localStorage.setItem("products", JSON.stringify(productsData))
-localStorage.setItem("products2", JSON.stringify(arrivalData))
+const allProducts = [...productsData, ...arrivalData]
+localStorage.setItem("allProducts", JSON.stringify(allProducts))
 

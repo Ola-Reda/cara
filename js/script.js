@@ -3,7 +3,9 @@ const producteBox = document.querySelector(".products-items");
 const ArrivalBox = document.querySelector(".new-products .products-items");
 const bannerTopBox = document.querySelector(".blog .top-box");
 const bannerBttomBox = document.querySelector(".blog .bottom-box");
-
+const productDetails = document.querySelector(".product-details")
+console.log(productDetails)
+console.log(bannerTopBox)
 
 //function to display products in page
 function dsiplayproducts(data) {
@@ -15,7 +17,9 @@ function dsiplayproducts(data) {
     data.map(item => {
         products += `
         <div class="p-3 product border border-solid border-gray-200 rounded-3xl shadow hover:scale-95 transition delay-200 ease-in-out duration-500" id="${item.id}">
-            <img class="rounded-3xl" src="${item.image}" alt="${item.name}">
+        <a onClick="displayProductDetails(${item.id})">
+            <img class="rounded-3xl" src="${item.image}" alt="${item.name}" >
+        </a>    
             <div class="mt-4">
                 <span class="text-[#979595]">${item.brand}</span>
                 <h4 class="capitalize font-medium">${item.name}</h4>
@@ -45,7 +49,9 @@ function dsiplayArrival(data) {
     data.map(item => {
         products += `
         <div class="p-3 product border border-solid border-gray-200 rounded-3xl shadow hover:scale-95 transition delay-200 duration-500 ease-in-out" id="${item.id}">
-            <img class="rounded-3xl" src="${item.image}" alt="${item.name}">
+            <a onClick="displayProductDetails(${item.id})">
+                <img class="rounded-3xl" src="${item.image}" alt="${item.name}">
+            </a>        
             <div class="mt-4">
                 <span class="text-[#979595]">${item.brand}</span>
                 <h4 class="capitalize font-medium">${item.name}</h4>
@@ -87,7 +93,7 @@ function displayTopBlog(data) {
     let banners = ''
     data.map(item => {
         banners += `
-            <div class="${item.id} transtion flex items-center text-white h-60 md:h-[400px] hover:brightness-50">
+            <div class="${item.id} transtion flex items-center text-white h-60 md:h-[400px] brightness-50 hover:brightness-100">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full">
                 <div class="absolute pl-8 leading-10">
                     <span class="font-extralight text-[26px]">${item.name}</span>
@@ -107,7 +113,7 @@ function displayBottomBlog(data) {
     let banners = ''
     data.map(item => {
         banners += `
-            <div class="${item.id} transtion flex items-center text-white hover:brightness-50">
+            <div class="${item.id} transtion flex items-center text-white brightness-50 hover:brightness-100">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full">
                 <div class="absolute pl-8 leading-8">
                     <span class="font-bold uppercase text-[26px]">${item.name}</span>
@@ -119,3 +125,26 @@ function displayBottomBlog(data) {
     bannerBttomBox.innerHTML = banners
 }
 displayBottomBlog(bannersBottomData) 
+
+
+//function to display product details
+function displayProductDetails(id) {
+    let details = ''
+    allProducts.map(product => {
+        details += `
+            <div class="product-image  md:w-[30%]">
+            <img src="${product.image}" class="rounded-3xl">
+            </div>
+            <div class="product-info md:w-[60%] text-center md:text-left pt-6">
+                <span class="capitalize font-semibold text-sm">${product.category}</span>
+                <h3 class="mt-4 mb-3 font-semibold capitalize text-2xl">${product.category}</h3>
+                <span>${product.category}</span>
+                <span>${product.category}</span>
+                <button class="transtion capitalize mb-4 bg-dim-900 rounded pt-2.5 pb-2 px-4 border text-white hover:bg-transparent hover:border-dim-900 hover:text-dim-900">add to cart</button>
+                <h4 class="capitalize font-semibold text-xl mb-3">product details</h4>
+                <p class="capitalize text-lg">The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz per sq. yd fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar and available in a range of colors, it offers it all in the ultimate head- turning package</p>
+            </div>
+        `
+    })
+    productDetails.innerHTML = details
+}
