@@ -4,8 +4,6 @@ const ArrivalBox = document.querySelector(".new-products .products-items");
 const bannerTopBox = document.querySelector(".blog .top-box");
 const bannerBttomBox = document.querySelector(".blog .bottom-box");
 const productDetails = document.querySelector(".product-details")
-console.log(productDetails)
-console.log(bannerTopBox)
 
 //function to display products in page
 function dsiplayproducts(data) {
